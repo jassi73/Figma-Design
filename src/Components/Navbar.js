@@ -73,6 +73,7 @@ function Navbar() {
                 display={isSmallerThan ? "none" : "visible"}
                 bg="#2D3166"
                 size="xs"
+                w="50px"
               >
                 {isOpen ? "close" : <MdMenu color="white" size="md" />}
               </MenuButton>
