@@ -109,18 +109,26 @@ function Banner() {
           reiciendis voluptatibus et.
         </Container>
         <Flex justifyContent="space-between">
-          <Button bg="#794192" rounded="full" size="sm" ml="8" mt="10" p="5">
+          <Button
+            bg="#794192"
+            rounded="full"
+            size="sm"
+            ml="8"
+            mt="8"
+            p="2"
+            color="#D3D0E8"
+          >
             VIEW EVENT
           </Button>
           <Flex
             color="#D3D0E8"
             fontSize="15"
             fontWeight="normal"
-            mt="53px"
+            mt="40px"
             mr="16"
           >
             <MdOutlineHeadphones color="orange" />{" "}
-            <Text mt="-1" mr="100px">
+            <Text mt="-1" mr={isSmallerThan ? "100px" : "-3"}>
               100 UTOOS{" "}
             </Text>
           </Flex>

@@ -65,7 +65,7 @@ function Navbar() {
   return (
     <>
       <Box bg={isSmallerThan ? "#2D3166" : "#2D3166"}>
-        <Menu bg="#000">
+        <Menu autoSelect={false} bg="#2D3166">
           {({ isOpen }) => (
             <>
               <MenuButton
@@ -76,18 +76,28 @@ function Navbar() {
               >
                 {isOpen ? "close" : <MdMenu color="white" size="md" />}
               </MenuButton>
-              <MenuList bg="#2D3166">
-                <MenuItem>Featured events</MenuItem>
-                <MenuItem>Popular events</MenuItem>
-                <MenuItem>Categories</MenuItem>
+              <MenuList
+                bg="#2D3166"
+                color="#D3D0E8"
+                borderColor="#6A62A5"
+                fontSize="xs"
+              >
+                <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                  Featured events
+                </MenuItem>
+                <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                  Popular events
+                </MenuItem>
+                <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                  Categories
+                </MenuItem>
                 <MenuItem>
                   <Flex justifyContent="space-between" p="1">
-                    <Link to="/signup">
-                      <Button size="xs" rounded="full" bg="#794192">
-                        {" "}
-                        Signup
-                      </Button>
-                    </Link>
+                    <Button size="xs" rounded="full" bg="#794192">
+                      {" "}
+                      Login
+                    </Button>
+
                     <Divider orientation="vertical" />
                     <Divider orientation="vertical" />
                     <Divider orientation="vertical" />
@@ -95,12 +105,16 @@ function Navbar() {
                     <Divider orientation="vertical" />
                     <Divider orientation="vertical" />
                     <Divider orientation="vertical" />
-                    <Link to="/signup">
-                      <Button size="xs" rounded="full" bg="#794192">
-                        {" "}
-                        Signup
-                      </Button>
-                    </Link>
+
+                    <Button
+                      size="xs"
+                      rounded="full"
+                      bg="#794192"
+                      onClick={onOpen}
+                    >
+                      {" "}
+                      Signup
+                    </Button>
                   </Flex>
                 </MenuItem>
               </MenuList>
