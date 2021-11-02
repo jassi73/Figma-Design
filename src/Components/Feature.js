@@ -19,38 +19,33 @@ function Features() {
   const [isSmallerThan] = useMediaQuery("(min-width: 500px)");
   const property = [
     {
-      imageUrl: "https://bit.ly/3BFk4hF",
-      imageUr2: "https://bit.ly/3BCvxi1",
+      imageUrl: "https://bit.ly/3BzIs3m",
+      imageUr2: "https://bit.ly/3w6jyHv    ",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3v8jt5G",
-      imageUr2: "https://bit.ly/3v8soEq",
+      imageUrl: "https://bit.ly/3mwB84y",
+      imageUr2: "https://bit.ly/31fYi6V",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/2YIcyEi",
-      imageUr2: "https://bit.ly/3lGGwkU",
+      imageUrl: "https://bit.ly/3nFMAKg",
+      imageUr2: "https://bit.ly/3jWh4Xk",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3AEJATc",
-      imageUr2: "https://bit.ly/3aDo3PW",
+      imageUrl: "https://bit.ly/3pX4bAc",
+      imageUr2: "https://bit.ly/31a8vlh",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3aCGHYs",
-      imageUr2: "https://bit.ly/3AIgxhr",
+      imageUrl: "https://bit.ly/2ZIZoYG",
+      imageUr2: "https://bit.ly/2Y4WlsO",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3aCGHYs",
-      imageUr2: "https://bit.ly/3AIgxhr",
-      imageAlt: "",
-    },
-    {
-      imageUrl: "https://bit.ly/3AR9Xp7",
-      imageUr2: "https://bit.ly/3p2tlNA",
+      imageUrl: "https://bit.ly/3BzyZJB",
+      imageUr2: "https://bit.ly/3GF85Uq",
       imageAlt: "",
     },
   ];
@@ -65,6 +60,7 @@ function Features() {
         // w="20%"
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -75,11 +71,11 @@ function Features() {
           src={property[0].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -121,7 +117,7 @@ function Features() {
         <Flex
           justifyContent="space-evenly"
           mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -152,6 +148,7 @@ function Features() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -162,11 +159,11 @@ function Features() {
           src={property[1].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -208,7 +205,7 @@ function Features() {
         <Flex
           justifyContent="space-evenly"
           mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -238,6 +235,7 @@ function Features() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -248,11 +246,11 @@ function Features() {
           src={property[2].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -294,7 +292,7 @@ function Features() {
         <Flex
           justifyContent="space-evenly"
           mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -324,6 +322,7 @@ function Features() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -334,11 +333,11 @@ function Features() {
           src={property[3].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -380,7 +379,7 @@ function Features() {
         <Flex
           justifyContent="space-evenly"
           mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -410,6 +409,7 @@ function Features() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -420,11 +420,11 @@ function Features() {
           src={property[4].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -466,7 +466,7 @@ function Features() {
         <Flex
           justifyContent="space-evenly"
           mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -496,6 +496,7 @@ function Features() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -506,11 +507,11 @@ function Features() {
           src={property[5].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -551,8 +552,8 @@ function Features() {
         </Box>
         <Flex
           justifyContent="space-evenly"
-          mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          mt="4"
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"

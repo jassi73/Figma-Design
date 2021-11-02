@@ -18,37 +18,37 @@ function Popular() {
   const [isSmallerThan] = useMediaQuery("(min-width: 500px)");
   const property = [
     {
-      imageUrl: "https://bit.ly/3FHFhKq",
-      imageUr2: "https://bit.ly/3BLptE4",
+      imageUrl: "https://bit.ly/3mvO5LU",
+      imageUr2: "https://bit.ly/31lAUVL",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3AAiBbn",
-      imageUr2: "https://bit.ly/3aDo3PW",
+      imageUrl: "https://bit.ly/3kgsTYX",
+      imageUr2: "https://bit.ly/31a8vlh",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3p17oyd",
-      imageUr2: "https://bit.ly/3p17gid",
+      imageUrl: "https://bit.ly/3jXa4tl",
+      imageUr2: "https://bit.ly/3BBfyAa",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3FLTmGH",
-      imageUr2: "https://bit.ly/3aDo3PW",
+      imageUrl: "https://bit.ly/3BBxU43",
+      imageUr2: "https://bit.ly/3bt4BG8",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3aCGHYs",
-      imageUr2: "https://bit.ly/3AIgxhr",
+      imageUrl: "https://bit.ly/3CAL5U9",
+      imageUr2: "https://bit.ly/2Y4WlsO",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3AR9Xp7",
-      imageUr2: "https://bit.ly/3p2tlNA",
+      imageUrl: "https://bit.ly/3btsVro",
+      imageUr2: "https://bit.ly/3jWh4Xk",
       imageAlt: "",
     },
     {
-      imageUrl: "https://bit.ly/3lGWiME",
+      imageUrl: "https://bit.ly/3nFMAKg",
       imageUr2: "https://bit.ly/3AIgxhr",
       imageAlt: "",
     },
@@ -68,7 +68,7 @@ function Popular() {
         maxW="xs"
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
-        ml="9"
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -79,11 +79,11 @@ function Popular() {
           src={property[0].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="1" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -124,8 +124,8 @@ function Popular() {
         </Box>
         <Flex
           justifyContent="space-evenly"
-          mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          mt={isSmallerThan ? "3" : "3"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -154,6 +154,7 @@ function Popular() {
         overflow="hidden"
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
+        ml="2"
         mt={isSmallerThan ? "" : "6"}
         _hover={{
           boxShadow: "xl",
@@ -165,11 +166,11 @@ function Popular() {
           src={property[1].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -210,8 +211,8 @@ function Popular() {
         </Box>
         <Flex
           justifyContent="space-evenly"
-          mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          mt={isSmallerThan ? "3" : "3"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -241,6 +242,7 @@ function Popular() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -251,11 +253,11 @@ function Popular() {
           src={property[2].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -296,8 +298,8 @@ function Popular() {
         </Box>
         <Flex
           justifyContent="space-evenly"
-          mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          mt={isSmallerThan ? "3" : "3"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -327,6 +329,7 @@ function Popular() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -337,11 +340,11 @@ function Popular() {
           src={property[3].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -382,8 +385,8 @@ function Popular() {
         </Box>
         <Flex
           justifyContent="space-evenly"
-          mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          mt={isSmallerThan ? "3" : "3"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -413,6 +416,7 @@ function Popular() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -423,11 +427,11 @@ function Popular() {
           src={property[4].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -468,8 +472,8 @@ function Popular() {
         </Box>
         <Flex
           justifyContent="space-evenly"
-          mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          mt={isSmallerThan ? "3" : "3"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"
@@ -499,6 +503,7 @@ function Popular() {
         w={isSmallerThan ? "20%" : ""}
         ml={isSmallerThan ? "9" : "12"}
         mt={isSmallerThan ? "" : "6"}
+        ml="2"
         _hover={{
           boxShadow: "xl",
           transform: "scale(1.07)",
@@ -509,11 +514,11 @@ function Popular() {
           src={property[5].imageUrl}
           alt={property.imageAlt}
           borderRadius="8"
-          w="160px"
-          h="100px"
+          w={isSmallerThan ? "180px" : "600px"}
+          h={isSmallerThan ? "140px" : "200px"}
         />
 
-        <Box p="2">
+        <Box p="2" h="12">
           <Box display="flex">
             <Box>
               <Image
@@ -554,8 +559,8 @@ function Popular() {
         </Box>
         <Flex
           justifyContent="space-evenly"
-          mt="3"
-          ml={isSmallerThan ? "" : "-10"}
+          mt={isSmallerThan ? "3" : "3"}
+          ml={isSmallerThan ? "" : "-5"}
         >
           <Button
             bg="#6D61A2"

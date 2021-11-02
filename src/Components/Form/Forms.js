@@ -12,6 +12,17 @@ import {
   MdCheckCircle,
   Button,
   useMediaQuery,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalCloseButton,
+  ModalHeader,
+  ModalBody,
+  FormControl,
+  FormLabel,
+  Input,
+  ModalFooter,
+  useDisclosure,
 } from "@chakra-ui/react";
 
 function Forms() {
@@ -21,6 +32,10 @@ function Forms() {
 
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const initialRef = React.useRef();
+  const finalRef = React.useRef();
   const state = useSelector((state) => state);
   console.log("state", state);
   const handleSubmit = (e) => {
@@ -34,53 +49,56 @@ function Forms() {
   };
 
   return (
-    <Box bg="#24244D" p={isSmallerThan ? "4" : "20"}>
-      {" "}
-      <div className="login">
-        <form className="login--form">
-          <h1> Signup Here</h1>
-          <input
-            type="name"
-            placeholder="First Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+    <>
+      <Button onClick={onOpen}>Signup</Button>
+      <Modal
+        initialFocusRef={initialRef}
+        finalFocusRef={finalRef}
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Create your account</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody pb={6}>
+            <FormControl>
+              <FormLabel>First name</FormLabel>
+              <Input
+                ref={initialRef}
+                placeholder="Full name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </FormControl>
 
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button onClick={(e) => handleSubmit(e)} className="submit--btn">
-            {" "}
-            Signup
-          </button>
-          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-            <Button mt="3" ml="150" rounded="full" size="sm" bg="hotpink">
-              {" "}
-              Home
+            <FormControl mt={4}>
+              <FormLabel>Last name</FormLabel>
+              <Input
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </FormControl>
+            <FormControl mt={4}>
+              <FormLabel>Password</FormLabel>
+              <Input
+                placeholder="Email"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </FormControl>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme="blue" mr={3} onClick={(e) => handleSubmit(e)}>
+              Signup
             </Button>
-          </Link>
-          <List spacing={3}>
-            <ListItem>
-              <ListIcon as={MdCheckCircle} color="green.500" />
-              {state.userData.name}
-            </ListItem>
-            <ListItem>
-              <ListIcon as={MdCheckCircle} color="green.500" />
-              {state.userData.email}
-            </ListItem>
-          </List>
-        </form>
-      </div>
-    </Box>
+            <Button onClick={onClose}>Cancel</Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
   );
 }
 

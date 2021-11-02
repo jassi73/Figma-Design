@@ -17,6 +17,7 @@ function Banner() {
   return (
     <Flex
       bg="#2D3166"
+      boxShadow="md"
       // bg={isSmallerThan ? "#2D3166" : "#2D3166"}
       w={isSmallerThan ? "100%" : "100%"}
       p={isSmallerThan ? "3" : "4"}
@@ -34,7 +35,7 @@ function Banner() {
         <Box display="flex" mt="2">
           <Box>
             <Image
-              src="https://bit.ly/3FHMqKV"
+              src="https://bit.ly/2ZFIBWt "
               alt=""
               borderRadius="20"
               w="90px"
@@ -115,16 +116,18 @@ function Banner() {
             color="#D3D0E8"
             fontSize="15"
             fontWeight="normal"
-            mt="55px"
+            mt="53px"
             mr="16"
           >
             <MdOutlineHeadphones color="orange" />{" "}
-            <Text mt="-1">100 UTOOS </Text>
+            <Text mt="-1" mr="100px">
+              100 UTOOS{" "}
+            </Text>
           </Flex>
         </Flex>
       </Box>
       <Image
-        src="https://bit.ly/3aD3EKU"
+        src="https://bit.ly/3nPq9Cu"
         alt=""
         borderRadius="15"
         w="600px"
