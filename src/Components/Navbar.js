@@ -31,12 +31,15 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
+  useColorModeValue,
+  useColorMode,
 } from "@chakra-ui/react";
 
 import { MdOutlineExpandMore, MdMenu } from "react-icons/md";
 
 function Navbar() {
   const [isSmallerThan] = useMediaQuery("(min-width: 500px)");
+  const { toggleColorMode } = useColorMode();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -179,7 +182,7 @@ function Navbar() {
               </>
             )}
           </Menu> */}
-          <Menu isLazy closeOnBlur variant="brand">
+          <Menu isLazy variant="brand" autoSelect={false}>
             <MenuButton
               // rightIcon={<MdOutlineExpandMore />}
               variant="link"
@@ -198,18 +201,30 @@ function Navbar() {
             </MenuButton>
 
             <MenuList
-              bg="#3D4272"
-              colorScheme="whiteAlpha"
               fontWeight="light"
-              fontSize="sm"
+              fontSize="xs"
+              bg="#2C3266"
+              color="#D3D0E8"
+              borderColor="#6A62A5"
             >
-              {/* MenuItems are not rendered unless Menu is open */}
-              <MenuItem>Chatting</MenuItem>
-              <MenuItem>Comedy</MenuItem>
-              <MenuItem>Entertainment</MenuItem>
-              <MenuItem>Gaming</MenuItem>
-              <MenuItem>Lifestyle</MenuItem>
-              <MenuItem>Music</MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                Chatting
+              </MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                Comedy
+              </MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                Entertainment
+              </MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                Gaming
+              </MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                Lifestyle
+              </MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                Music
+              </MenuItem>
             </MenuList>
           </Menu>
         </Flex>
@@ -268,7 +283,7 @@ function Navbar() {
           >
             Signup
           </Button>
-          <Menu isLazy closeOnBlur>
+          <Menu isLazy closeOnBlur autoSelect={false}>
             <MenuButton
               variant="link"
               color="#D3D0E8"
@@ -281,15 +296,23 @@ function Navbar() {
               <MdOutlineExpandMore color="white" size="25" />
             </MenuButton>
             <MenuList
-              bg="#3D4272"
+              bg="#2C3266"
               colorScheme="whiteAlpha"
               fontWeight="light"
-              fontSize="sm"
+              fontSize="xs"
+              color="#D3D0E8"
+              borderColor="#6A62A5"
             >
-              {/* MenuItems are not rendered unless Menu is open */}
-              <MenuItem> Language</MenuItem>
-              <MenuItem>FAQ</MenuItem>
-              <MenuItem>Privacy Policy</MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                {" "}
+                Language
+              </MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                FAQ
+              </MenuItem>
+              <MenuItem _hover={{ bg: "#3D4272" }} fontWeight="semibold">
+                Privacy Policy
+              </MenuItem>
             </MenuList>
           </Menu>
           {/* <MdOutlineExpandMore color="#6D61A2" size="25" /> */}
